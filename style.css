@@ -63,4 +63,9 @@ footer{
     min-height: 10px;
     border-radius: 2px;
 }
+footer > ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
 
