@@ -22,14 +22,18 @@ header{
 
 
 #main {
-    min-height: 800px;
+    min-height: 700px;
     margin: 0px;
     padding: 0px;
     width: 100vw;
-    height: 100vh;
+    height: 60vh;
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+.image{
+    width: 100px; 
+    height: 100px;
 }
 
 #main > aside {
