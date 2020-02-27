@@ -43,6 +43,35 @@ header{
         padding: 5px;
         border-radius: 2px;
         width: 60%;   }
+.formulary{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulary > input{
+
+    padding: 5px;
+    margin: 8px;
+    width: 50vw;
+    height: 10vh;
+    opacity: .6;
+    border: whitesmoke;
+    
+}  
+.send_mail{
+    width: 20vw;
+    height: 10vh;    
+    color: #ffffff;
+    background-color: #94a5ad;
+    border: 2px solid #565a79;
+    border-radius: 8px;
+    opacity: .7;
+    }
+
 
 footer{
     /* margin: 5px; */
@@ -67,3 +96,13 @@ footer{
     color: rgba(102, 109, 206, 0.801);
    text-decoration: none;
   }
+
+
+
+  /* :hover */
+
+  .send_mail:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+    
+}
