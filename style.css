@@ -1,52 +1,72 @@
 /* Adaptacion de boostrap a mi nav  */
 .wrap{
     width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     background: url(woman.jpg) ;
     background-size:cover;
+    opacity: .8;
 }
 marquee{
      background-color: whitesmoke;
      color: rgb(160, 123, 123); 
  }
 header{
-    padding: 10px 0 ;
-    font-size: 20px;
-    position: fixed;
+    padding: 10px;
     margin: 5px;
-    width: 100%;
+    width: 98%;
     min-height: 60px;
+    height: 15vh;
     border-radius: 2px; 
+    font-size: large;
 }
 
 
 #main {
-    min-height: 700px;
     margin: 0px;
     padding: 0px;
-    width: 100vw;
-    height: 60vh;
+    width: 90vw;
+    height: 90vh;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items:inherit;
+    position: relative;
 }
-.image{
-    width: 100px; 
-    height: 100px;
-}
+#main > nav {
+    margin: 5px;
+  
+    padding: 5px;
+    height: 90%;
+    width: 60%;
+   
+    }
+    .carrus {
+        position: relative;
+        padding: 5px;
+      }
+      
+      .carrus > img {
+        position: absolute;
+        top: 100;
+        opacity: 0;
+        padding: 5px;
+        margin-top: 10px;
+        animation: display 10s infinite;
+        height: 50%;
+        width: 50%;
+      }
+
 
 #main > aside {
     margin: 5px;
     padding: 5px;
     border-radius: 2px;
     width: 40%;
+    top: initial;
     }
-#main > nav {
-        margin: 5px;
-        padding: 5px;
-        border-radius: 2px;
-        width: 60%;   }
+
 .formulary{
     width: 100vw;
     height: 100%;
@@ -73,19 +93,13 @@ header{
     background-color: #94a5ad;
     border: 2px solid #565a79;
     border-radius: 8px;
-    opacity: .7;
-    }
-
-
+    opacity: .5;    padding: 5px;
+   
+}   
 footer{
-    /* margin: 5px; */
-    padding: 5px;
-    min-height: 20px;
-    border-radius: 2px;
-    font-size: 40px;
-    width: 100%;
-    height: 10vh;
     display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 .listF {
@@ -97,6 +111,8 @@ footer{
      list-style-type: none;
  }
   footer a {
+   
+     width: 100vw;
     color: rgba(102, 109, 206, 0.801);
    text-decoration: none;
   }
@@ -108,5 +124,45 @@ footer{
   .send_mail:hover{
     color: #1883ba;
     background-color: #ffffff;
-    
 }
+.wrap #main nav > .image:hover{
+}
+
+
+
+@keyframes display {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+  }
+
+      
+  img:nth-child(2) {
+    animation-delay: 2s;
+  }
+  img:nth-child(3) {
+    animation-delay: 4s;
+  }
+  img:nth-child(4) {
+    animation-delay: 6s;
+  }
+  img:nth-child(5) {
+    animation-delay: 8s;
+  }
