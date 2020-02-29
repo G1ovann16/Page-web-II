@@ -1,19 +1,21 @@
-/* Adaptacion de boostrap a mi nav  */
+/* defino el contenedor de mi pagina */
 .wrap{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url(woman.jpg) ;
+    background:url(woman.jpg);
     background-size:cover;
     opacity: .8;
 }
+/* header */
 marquee{
      background-color: whitesmoke;
      color: rgb(160, 123, 123); 
  }
 header{
+    opacity: 1;
     padding: 10px;
     margin: 5px;
     width: 98%;
@@ -23,10 +25,7 @@ header{
     font-size: large;
 }
 
-
 #main {
-    margin: 0px;
-    padding: 0px;
     width: 90vw;
     height: 90vh;
     display: flex;
@@ -40,13 +39,14 @@ header{
     padding: 5px;
     height: 90%;
     width: 60%;
-   
-    }
+ }
+
+ /* caracteruisticas del carrusel de imagenes */
     .carrus {
         position: relative;
         padding: 5px;
       }
-      
+  
       .carrus > img {
         position: absolute;
         top: 100;
@@ -57,8 +57,6 @@ header{
         height: 50%;
         width: 50%;
       }
-
-
 #main > aside {
     margin: 5px;
     padding: 5px;
@@ -66,7 +64,12 @@ header{
     width: 40%;
     top: initial;
     }
-
+  /* animatcion de los textos que contiene las caracteristicas de las imagenes */
+  aside p{
+    opacity: 0;
+    animation: text 10s infinite;
+  }
+  /* El formulario para poder enviar contactos y/o datos  */
 .formulary{
     width: 100vw;
     height: 100%;
@@ -86,6 +89,7 @@ header{
     border: whitesmoke;
     
 }  
+
 .send_mail{
     width: 20vw;
     height: 10vh;    
@@ -96,6 +100,26 @@ header{
     opacity: .5;    padding: 5px;
    
 }   
+nav h2{
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 1;
+    font-size: 25px;
+    color: rgb(14, 13, 13);
+    font-weight: bolder;
+
+}
+nav h3{
+    opacity: 1;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(14, 13, 13);
+}
+nav p{
+color: whitesmoke;
+}
+
+/* el footer */
 footer{
     display: flex;
     align-items: center;
@@ -113,13 +137,14 @@ footer{
   footer a {
    
      width: 100vw;
-    color: rgba(102, 109, 206, 0.801);
+    color: rgba(24, 24, 27, 0.801);
+    font-size: 30px;
    text-decoration: none;
   }
 
 
 
-  /* :hover */
+  /* :hover y buttom */
 
   .send_mail:hover{
     color: #1883ba;
@@ -127,8 +152,6 @@ footer{
 }
 .wrap #main nav > .image:hover{
 }
-
-
 
 @keyframes display {
     0% {
@@ -152,7 +175,6 @@ footer{
       opacity: 0;
     }
   }
-
       
   img:nth-child(2) {
     animation-delay: 2s;
@@ -164,5 +186,39 @@ footer{
     animation-delay: 6s;
   }
   img:nth-child(5) {
+    animation-delay: 8s;
+  }
+
+  /* text aniamtion  */
+
+  @keyframes text {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    20% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+      
+  p:nth-child(2) {
+    animation-delay: 2s;
+  }
+  p:nth-child(3) {
+    animation-delay: 4s;
+  }
+  p:nth-child(4) {
+    animation-delay: 6s;
+  }
+  p:nth-child(5) {
     animation-delay: 8s;
   }
