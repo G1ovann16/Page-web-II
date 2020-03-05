@@ -1,10 +1,10 @@
 /* defino el contenedor de mi pagina */
 .wrap{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100vw;
+    height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
     background:url(woman.jpg);
     background-size:cover;
     opacity: .8;
@@ -19,10 +19,16 @@ header{
     padding: 10px;
     margin: 5px;
     width: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     min-height: 60px;
-    height: 10px;
     border-radius: 2px; 
     font-size: large;
+}
+#container{
+    display: flex;
+    flex-direction: column;
 }
 
 #main {
@@ -42,7 +48,6 @@ header{
 
  /* caracteruisticas del carrusel de imagenes */
     .carrus {
-        position: relative;
         padding: 5px;
       }
   
@@ -62,11 +67,27 @@ header{
     border-radius: 2px;
     width: 40%;
         }
-  /* animatcion de los textos que contiene las caracteristicas de las imagenes */
-  aside p{
+  
+  /* index.html */
+  .aside{
+    display: flex;
+    flex-direction: column;
+    
+    }
+
+        /* animatcion de los textos que contiene las caracteristicas de las imagenes */
+  .nav p{
     opacity: 0;
     animation: text 10s infinite;
+    width: 80vw;
   }
+  .listF li{
+    list-style-type: none;
+    height: 20vh;
+    width: 20vw;
+    font-size: 50px;
+}
+
   /* El formulario para poder enviar contactos y/o datos  */
 .formulary{
     width: 100vw;
@@ -85,7 +106,6 @@ header{
     height: 10vh;
     opacity: .6;
     border: whitesmoke;
-    
 }  
 
 .send_mail{
@@ -96,8 +116,9 @@ header{
     border: 2px solid #565a79;
     border-radius: 8px;
     opacity: .5;    padding: 5px;
-   
 }   
+
+/* Contact.html */
 nav h2{
     display: flex;
     flex-wrap: wrap;
@@ -105,7 +126,6 @@ nav h2{
     font-size: 25px;
     color: rgb(14, 13, 13);
     font-weight: bolder;
-
 }
 nav h3{
     opacity: 1;
@@ -113,34 +133,6 @@ nav h3{
     font-weight: bolder;
     color: rgb(14, 13, 13);
 }
-nav p{
-color: whitesmoke;
-}
-
-/* el footer */
-footer{
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.listF {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    }
-    footer .listF li{
-     list-style-type: none;
- }
-  footer a {
-   
-     width: 100vw;
-    color: rgba(24, 24, 27, 0.801);
-    font-size: 30px;
-   text-decoration: none;
-  }
-
-
 
   /* :hover y buttom */
 
