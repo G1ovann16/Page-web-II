@@ -7,7 +7,7 @@
    justify-content: space-evenly;
     background:url(woman.jpg);
     background-size:cover;
-    opacity: .8;
+    opacity: .6;
 }
 /* header */
 marquee{
@@ -47,8 +47,9 @@ header{
  }
 
  /* caracteruisticas del carrusel de imagenes */
-    .carrus {
-        padding: 5px;
+  #carouselExampleIndicators {
+       width: 60vw;
+       height: 60vh;
       }
   
       .carrus > img {
@@ -69,22 +70,24 @@ header{
         }
   
   /* index.html */
-  .aside{
-    display: flex;
-    flex-direction: column;
-    
-    }
-
+  
         /* animatcion de los textos que contiene las caracteristicas de las imagenes */
   .nav p{
     opacity: 0;
     animation: text 10s infinite;
-    width: 80vw;
   }
-  .listF li{
+
+  .btn{
+    width: 10vw;
+    height: 10vh;
+    font-style: oblique;
+  }
+  .aside{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+ .listF > li{
     list-style-type: none;
-    height: 20vh;
-    width: 20vw;
     font-size: 50px;
 }
 
