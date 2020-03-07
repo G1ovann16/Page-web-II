@@ -1,199 +1,58 @@
-/* defino el contenedor de mi pagina */
-.wrap{
-    width: 100vw;
-    height: 100vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-evenly;
-    background:url(woman.jpg);
-    background-size:cover;
+.wrap
+{
+    background-image: url(curve.jpg);
+    background-size: cover;
     opacity: .6;
 }
-/* header */
-marquee{
-     background-color: whitesmoke;
-     color: rgb(160, 123, 123); 
- }
-header{
-    opacity: 1;
+.logo{
+    width: 8vw;
+}
+.car_compra{
+    font-size: 3vw;
+    width: 97%;
+display: flex;
+justify-content:flex-end;
+}
+.carousel{
+    width: 60vw;
+margin-left: 15%;
+}
+.row{
+    margin: 20px;
     padding: 10px;
-    margin: 5px;
-    width: 98%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    min-height: 60px;
-    border-radius: 2px; 
-    font-size: large;
 }
-#container{
-    display: flex;
-    flex-direction: column;
+.footer{
+    width: 100%;
 }
-
-#main {
-    width: 90vw;
-    height: 90vh;
+.listF{
+    list-style-type: none;
+    font-size: 40px;
+    height: 20vh;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    position: relative;
+    justify-content: space-around;
 }
-#main > nav {
-    margin: 5px;
-  
-    padding: 5px;
-    height: 90%;
-    width: 60%;
+.row{
+    height: auto;
+    width: auto;
+}
+.text-left{
+    font-size: 20px;
+}
+
+.card{
+    margin: 10px;
+}
+ h1, h5, p{
+     color: blue;
+     opacity: 1;
  }
 
- /* caracteruisticas del carrusel de imagenes */
-  #carouselExampleIndicators {
-       width: 60vw;
-       height: 60vh;
-      }
-  
-      .carrus > img {
-        position: absolute;
-        top: 100;
-        opacity: 0;
-        padding: 5px;
-        margin-top: 10px;
-        animation: display 10s infinite;
-        height: 50%;
-        width: 50%;
-      }
-#main > aside {
-    margin: 5px;
-    padding: 5px;
-    border-radius: 2px;
-    width: 40%;
-        }
-  
-  /* index.html */
-  
-        /* animatcion de los textos que contiene las caracteristicas de las imagenes */
-  .nav p{
-    opacity: 0;
-    animation: text 10s infinite;
-  }
-
-  .btn{
-    width: 10vw;
-    height: 10vh;
-    font-style: oblique;
-  }
-  .aside{
-    display: flex;
-    flex-direction: row-reverse;
-  }
- .listF > li{
-    list-style-type: none;
-    font-size: 50px;
-}
-
-  /* El formulario para poder enviar contactos y/o datos  */
-.formulary{
-    width: 100vw;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.formulary > input{
-
-    padding: 5px;
-    margin: 8px;
-    width: 50vw;
-    height: 10vh;
-    opacity: .6;
-    border: whitesmoke;
-}  
-
-.send_mail{
-    width: 20vw;
-    height: 10vh;    
-    color: #ffffff;
-    background-color: #94a5ad;
-    border: 2px solid #565a79;
-    border-radius: 8px;
-    opacity: .5;    padding: 5px;
-}   
-
-/* Contact.html */
-nav h2{
-    display: flex;
-    flex-wrap: wrap;
-    opacity: 1;
-    font-size: 25px;
-    color: rgb(14, 13, 13);
-    font-weight: bolder;
-}
-nav h3{
-    opacity: 1;
-    font-size: 20px;
-    font-weight: bolder;
-    color: rgb(14, 13, 13);
-}
-
-  /* :hover y buttom */
-
-  .send_mail:hover{
-    color: #1883ba;
-    background-color: #ffffff;
-}
-.wrap #main nav > .image:hover{
-}
-
-@keyframes display {
-    0% {transform: translateX(200px);
-      opacity: 0;}
-    10% {transform: translateX(0);
-      opacity: 1;}  
-        20% {transform: translateX(0);
-      opacity: 1;}
-    30% {transform: translateX(-200px);
-      opacity: 0;}
-    100% {transform: translateX(-200px);
-      opacity: 0;}
-  }
-      
-  img:nth-child(2) {animation-delay: 2s;}
-  img:nth-child(3) {animation-delay: 4s;}
-  img:nth-child(4) {animation-delay: 6s;}
-  img:nth-child(5) {animation-delay: 8s;}
-
-  /* text aniamtion  */
-
-  @keyframes text {
-    0% {
-      opacity: 0;
-    }
-    10% {
-      opacity: 1;
-    }
-    20% {
-      opacity: 1;
-    }
-    30% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-
-      
-  p:nth-child(2) {
-    animation-delay: 2s;
-  }
-  p:nth-child(3) {
-    animation-delay: 4s;
-  }
-  p:nth-child(4) {
-    animation-delay: 6s;
-  }
-  p:nth-child(5) {
-    animation-delay: 8s;
-  }
+ .compras{
+     display: flex;
+     justify-content: space-evenly;
+     width: 100%;
+     margin: 20vh;
+     flex-wrap: wrap;
+ }
