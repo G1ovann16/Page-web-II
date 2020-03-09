@@ -1,46 +1,11 @@
-# Título 
-LatFaT Store
+# Título del Proyecto
 
-## Introducción
-
-Este proyecto aborda sobre la confección de una tienda de ropa Online.
-Con el objetivo de facilitar al cliente las ultimas tendencias de la moda y la facilidad de elegir desde su casa su estilo propio.
-En la siguiente propondremos diversos modelos con una animación de tiempo corto con una breve descripción.
-
-## Ejemplo de código
-@keyframes display {
-
-0% {transform: translateX(200px);
-opacity: 0;}
-
-10% {transform: translateX(0);
-opacity: 1;} 
-
-20% {transform: translateX(0);
-opacity: 1;}
-
-30% {transform: translateX(-200px);
-opacity: 0;}
-
-100% {transform: translateX(-200px);
-opacity: 0;}
-}
-
-img:nth-child(2) {animation-delay: 2s;}
-
-img:nth-child(3) {animation-delay: 4s;}
-
-img:nth-child(4) {animation-delay: 6s;}
-
-img:nth-child(5) {animation-delay: 8s;}
+_Este proyecto aborda sobre la confeccion de una tineda de ropa online. Con el desarrollo de facilitar al cliente las ultimas tendencias de la moda y la facilidad de elegir desde cualquier lugar su estilo propio._
 
 
-En el siguiente código muestra la animación de las imágenes en conjunto con el texto con su respectiva descripción
+### Pre-requisitos 📋
 
-## Uso e instalación
-
-La web es confeccionada para ser visualizada desde tu ordenador, tu tableta o móvil en dependencia de tus necesidades y/o posibilidades.
-Esta gestionado para los siguientes navegadores:
+_La web esta confeccionada para ser visualizada desde tu ordenador, tu tableta o movil en dependencia de tus necesidades y/o posibilidades. Esta gestionado para los siguientes navegadores_
 
 -Firefox (mobile and tablet)
 
@@ -50,14 +15,25 @@ Esta gestionado para los siguientes navegadores:
 
 - Internet Explorer
 
--Opera 
+-Opera
+
+_Posteriormente se desarrollara la aplicacion compatible para ios y androide. Constara de una base de datos por donde el usuario podra introducir sus articulos y detalles de los productos a conveniencia. Facil manejo y comodidad para ambas partes_
 
 
-Posteriormente se desarrollara aplicación compatible con ios y androide.
-Constará de una base de datos por donde el usuario podrá introducir sus artículos y detalles de los productos a conveniencia.
-Fácil manejo y comodidad para ambas partes.
+## Construido con 🛠️
 
-## Creado:
-Gioavnni Landaburo Del Arco 
+_Menciona las herramientas que utilizaste para crear tu proyecto_
 
-ENJOY IT ....
+* [HTML]
+* [CSS]
+* [JAVASCRIPT]
+* [BOOSTRAP]
+
+## Contribuyendo 🖇️
+
+Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
+
+
+## Autores ✒️
+
+* **Giovanni Landaburo Del Arco**-
