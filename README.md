@@ -1,5 +1,5 @@
 # Título 
-LatFaT Store
+LatFaT Store 🚀
 
 ## Introducción
 
