@@ -29,11 +29,6 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 * [JAVASCRIPT]
 * [BOOSTRAP]
 
-## Contribuyendo 🖇️
-
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-
 ## Autores ✒️
 
 * **Giovanni Landaburo Del Arco**-
