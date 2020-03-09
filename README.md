@@ -8,7 +8,7 @@ Con el objetivo de facilitar al cliente las ultimas tendencias de la moda y la f
 En la siguiente propondremos diversos modelos con una animación de tiempo corto con una breve descripción.
 
 ## Ejemplo de código
-@keyframes display {
+```@keyframes display {
 
 0% {transform: translateX(200px);
 opacity: 0;}
@@ -32,7 +32,7 @@ img:nth-child(3) {animation-delay: 4s;}
 
 img:nth-child(4) {animation-delay: 6s;}
 
-img:nth-child(5) {animation-delay: 8s;}
+img:nth-child(5) {animation-delay: 8s;}```
 
 
 En el siguiente código muestra la animación de las imágenes en conjunto con el texto con su respectiva descripción
